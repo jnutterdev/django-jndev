@@ -1,7 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
-html,
-body {
-  font-family: 'New Tegomin', serif;
-  background-color: #4f8b8b;
-  color: red;
+.bg-pattern {
+  background: url("../img/tiledbg4.jpeg");
 }
