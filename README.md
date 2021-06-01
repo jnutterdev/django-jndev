@@ -1,8 +1,6 @@
-# Starter Django project 3.1.7
+# Starter Django project 3.2.3
 
-This is a simple starter project that I created that is setup with one template view, sass, and some partial barebones. 
-
-It is not setup with a database or models, so that would need to be setup afterward.
+Starting redesign of jnuttedev.com website. Project is built with Django, Sass, and some Bulma. 
 
 ### To generate sass files 
 
