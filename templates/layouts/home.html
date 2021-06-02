@@ -2,11 +2,26 @@
 
 {% block content %}
 
+<section class="hero is-primary mb-5">
+  <div class="hero-body">
+    <p class="title">
+      Primary hero
+    </p>
+    <p class="subtitle">
+      Primary subtitle
+    </p>
+  </div>
+</section>
+
+<div class="container">
     {% for post in object_list %}
-    <div class="post-entry">
-        <img src="{{ post.cover.url}}" alt="{{ post.title }}" width="96" height="96">
-        <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
-        <p>{{ post.body }}</p>
-    </div>
+        <div class="post-entry">
+            <img src="{{ post.cover.url}}" alt="{{ post.title }}" width="96" height="96">
+            <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.body }}</p>
+        </div>
     {% endfor %}
+</div>
+
+
 {% endblock content %}

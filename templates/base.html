@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jndev blog</title>
     <link rel="icon" href="{% static 'favicon.ico' %}" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 </head>
 
 <body>
-
-    <h1><a href="{% url 'home' %}">jndev</a></h1>
-    {% block content %}
-    <h1>Hello!</h1>
-    {% endblock content %}
+    {% include './partials/nav.html' %}
+        {% block content %}
+        {% endblock content %}
+    {% include './partials/footer.html' %}
 </body>
 
 </html>
