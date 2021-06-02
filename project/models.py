@@ -6,7 +6,10 @@ class Post(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE,)
     body = models.TextField()
     cover = models.ImageField(upload_to='images/', null=True)
-    # do I need a date field for each post? 
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title
+        return self.created_at

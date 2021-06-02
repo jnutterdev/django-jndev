@@ -19,6 +19,7 @@
             <img src="{{ post.cover.url}}" alt="{{ post.title }}" width="96" height="96">
             <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.body | markdown | safe | truncatewords:10 }}</p>
+            <sub>{{ post.created_at }}</sub>
         </div>
     {% endfor %}
 </div>
