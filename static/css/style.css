@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .bg-pattern {
-  background: url("../img/tiledbg4.jpeg");
+  background: url("../img/tiledbg6.png");
 }

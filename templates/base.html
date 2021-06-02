@@ -13,12 +13,9 @@
 </head>
 
 <body>
-    <div class=" bg-pattern">
-      <h1><a href="{% url 'home' %}">jndev</a></h1>
+    {% include './partials/nav.html' %}
         {% block content %}
-      <h1>Hello!</h1>
         {% endblock content %}
-    </div>
     {% include './partials/footer.html' %}
 </body>
 

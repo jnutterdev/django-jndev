@@ -1,19 +1,30 @@
-<footer class="footer">
-  <div class="container">
-    <div class="level">
-      <div class="level-left">
-        <div class="level-item"><a class="title is-4" href="#">Pied Piper</a></div>
-      </div>
-      <div class="level-right"><a class="level-item" href="#">Features</a><a class="level-item" href="#">Enterprise</a><a class="level-item" href="#">Support</a><a class="level-item" href="#">ICO</a></div>
+<nav class="navbar is-transparent bg-pattern pb-6 mb-5">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{% url 'home' %}">
+      <h1>jn_dev</h1>
+    </a>
+    <div class="navbar-burger" data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <hr>
-    <div class="columns">
-      <div class="column">
-        <div class="buttons"><a class="button" href="#"><img src="placeholder/icons/twitter.svg" alt=""></a><a class="button" href="#"><img src="placeholder/icons/facebook-f.svg" alt=""></a><a class="button" href="#"><img src="placeholder/icons/instagram.svg" alt=""></a></div>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="{% url 'home' %}">
+        Home
+      </a>
+      <div class="navbar-item">
+        <a class="navbar-link" href="{% url 'home' %}">
+          About
+        </a>
       </div>
-      <div class="column has-text-centered has-text-right-tablet">
-        <p class="subtitle is-6">© 2020 Pied Piper. All right reserved.</p>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
       </div>
     </div>
   </div>
-</footer>
+</nav>
