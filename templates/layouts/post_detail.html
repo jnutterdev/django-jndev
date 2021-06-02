@@ -4,8 +4,9 @@
 {% block content %}
 
 <div class="container">
-    <img src="{{ post.cover.url}}" alt="{{ post.title }}" width="200" height="200">
+    <img src="{{ post.cover.url}}" alt="{{ post.title }}" width="500" height="500">
     <h2>{{ post.title }}</h2>
+    <sub>{{ post.created_at }}</sub>
     <p>{{ post.body | markdown | safe}}</p>
 </div>
 
