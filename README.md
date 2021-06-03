@@ -1,6 +1,6 @@
 # Starter Django project 3.2.3
 
-Starting redesign of jnuttedev.com website. Project is built with Django, Sass, and some Bulma. 
+Starting redesign of jnuttedev.com website. Project is built with Django, Sass, and some Bulma. Blog posts now converts markdown to HTML, saves timestamp for added/updated posts.
 
 ### To generate sass files 
 
