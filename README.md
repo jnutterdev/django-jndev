@@ -2,6 +2,14 @@
 
 Starting redesign of jnuttedev.com website. Project is built with Django, Sass, and some Bulma. Blog posts now converts markdown to HTML, saves timestamp for added/updated posts.
 
+Project uses [Poetry](https://github.com/python-poetry/poetry) for dependency management.
+
+`poetry shell`
+
+`poetry install`
+
+`./manage runserver`
+
 ### To generate sass files 
 
 Using [django-sass](https://github.com/coderedcorp/django-sass)
