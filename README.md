@@ -10,7 +10,8 @@ Project uses [Poetry](https://github.com/python-poetry/poetry) for dependency ma
 
 `./manage runserver`
 
-### To generate sass files 
+
+### To generate sass files in development
 
 Using [django-sass](https://github.com/coderedcorp/django-sass)
 
@@ -25,3 +26,4 @@ Run the server and watch for new sass file changes:
 ### Generate a new secret key
 
 `python generate_secret.py`
+
