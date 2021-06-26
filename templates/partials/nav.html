@@ -1,7 +1,45 @@
+<section class="hero is-dark is-medium">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item is-active" href="{% url 'home' %}">
+              Home
+            </a>
+            <a class="navbar-item" href="{% url 'about' %}">
+              About me
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 
-<nav id="nav">
-				<ul class="container">
-					<li><a href="{% url 'home' %}">Home</a></li>
-					<li><a href="{% url 'about' %}">About Me</a></li>
-				</ul>
-			</nav>
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <p class="title">
+        <h1>Hi, I'm <strong>John Nutter</strong>.</h1>
+      </p>
+      <p class="subtitle">
+        <p>I'm a full stack developer with a passion for web technologies</p>
+      </p>
+    </div>
+	<div class="container">
+		 <div class="control mb-5 has-text-centered">
+            <button class="button drop-shadows">About me</button>
+        </div>
+	</div>
+  </div>
+
+</section>
+
