@@ -1,21 +1,23 @@
 {% load static %}
+{% load tailwind_tags %}
 <!DOCTYPE HTML>
-<html>
+<html lang="en" class="text-gray-900 leading-tight">
 
 <head>
     <title>John Nutter</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+     {% tailwind_preload_css %}
+    {% tailwind_css %}
 </head>
 
-<body>
+<body class="min-h-screen bg-gray-100">
 
     {% include './partials/nav.html' %}
 
     <!-- Main content -->
-    <div class="container">
+    <div class="grid grid-flow-col grid-rows-2 grid-cols-3 gap-4">
         {% block content %} {% endblock content %}
     </div>
 

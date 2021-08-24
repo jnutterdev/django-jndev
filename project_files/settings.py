@@ -13,6 +13,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = ["192.168.0.33", "localhost", "127.0.0.1"]
+INTERNAL_IPS = ['127.0.0.1']
 
 # Application definition
 
@@ -24,7 +25,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
-    'django_sass',
+    'tailwind',
+    'jndev',
     
     'project.apps.ProjectConfig',
 ]
@@ -56,6 +58,8 @@ TEMPLATES = [
         },
     },
 ]
+
+TAILWIND_APP_NAME = 'jndev'
 
 WSGI_APPLICATION = 'project_files.wsgi.application'
 

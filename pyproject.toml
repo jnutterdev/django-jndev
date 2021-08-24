@@ -8,10 +8,10 @@ authors = ["jnutterdev <hello@jnutterdev.com>"]
 python = "^3.9"
 Django = "^3.2.3"
 Pillow = "^8.2.0"
-django-sass = "^1.0.1"
 python-dotenv = "^0.17.1"
 psycopg2-binary = "^2.8.6"
 Markdown = "^3.3.4"
+django-tailwind = "^2.2.0"
 
 [tool.poetry.dev-dependencies]
 
