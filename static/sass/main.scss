@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+/*
+COLORS in RGBA
+
+$color-theme_Screen-Shot-2021-01-28-at-8-1-rgba: rgba(19,35,38, 1);
+$color-theme_Screen-Shot-2021-01-28-at-8-2-rgba: rgba(51,61,64, 1);
+$color-theme_Screen-Shot-2021-01-28-at-8-3-rgba: rgba(89,84,18, 1);
+$color-theme_Screen-Shot-2021-01-28-at-8-4-rgba: rgba(242,203,5, 1);
+$color-theme_Screen-Shot-2021-01-28-at-8-5-rgba: rgba(217,182,7, 1);
+*/
+
+$black: #132326;
+$grey: #333D40;
+$brown: #595412;
+$yellow1: #F2CB05;
+$yellow2: #D9B607;
 html,
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    background-color: $black;
+    color: white;
 }
 
 nav a {
@@ -12,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #6f44ad;
+    background-color: $grey;
 }
 
 nav div {
@@ -22,7 +40,7 @@ nav div {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #8e44ad;
+    background-color: $brown;
     width: 100vw;
     margin: 0 auto;
     top: 0;
