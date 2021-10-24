@@ -1,4 +1,6 @@
+{% load webp %}
 {% load static %}
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -14,7 +16,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="https://www.jnutterdev.com/assets/images/johnhead.jpg" alt="profile pic" /></span>
+							<span class="image fit">
+								<picture>	
+									<img src="{% webp '/img/johnhead-347.jpg' %}" 
+									srcset="{% webp '/img/johnhead-347.jpg' %} 347w, {% webp '/img/johnhead-800.jpg' %} 800w" sizes="347px" alt="profile pic" />
+								</picture>
+							</span>
 						</div>
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
@@ -75,7 +82,7 @@
 						<div class="col-4 col-6-medium col-12-small">
 							{% for post in object_list %}
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="{% static 'img/pic01.jpg' %}" alt="" /></a>
+								<a href="#" class="image featured"><img src="{% static 'img/pic01.jpg' %}" loading="lazy"  alt="" /></a>
 								<h3><a href="#">{{ post.title }}</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
@@ -83,35 +90,35 @@
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="{% static 'img/pic02.jpg' %}" alt="" /></a>
+								<a href="#" class="image featured"><img src="{% static 'img/pic02.jpg' %}" loading="lazy"  alt="" /></a>
 								<h3><a href="#">Veroeros primis</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="{% static 'img/pic03.jpg' %}" alt="" /></a>
+								<a href="#" class="image featured"><img src="{% static 'img/pic03.jpg' %}" loading="lazy" alt="" /></a>
 								<h3><a href="#">Lorem ipsum</a></h3> 
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="{% static 'img/pic04.jpg' %}" alt="" /></a>
+								<a href="#" class="image featured"><img src="{% static 'img/pic04.jpg' %}" loading="lazy" alt="" /></a>
 								<h3><a href="#">Tempus dolore</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="{% static 'img/pic05.jpg' %}" alt="" /></a>
+								<a href="#" class="image featured"><img src="{% static 'img/pic05.jpg' %}" loading="lazy"  alt="" /></a>
 								<h3><a href="#">Feugiat aliquam</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
-								<a href="#" class="image featured"><img src="{% static 'img/pic06.jpg' %}" alt="" /></a>
+								<a href="#" class="image featured"><img src="{% static 'img/pic06.jpg' %}" loading="lazy"  alt="" /></a>
 								<h3><a href="#">Sed amet ornare</a></h3>
 								<p>Ornare nulla proin odio consequat.</p>
 							</article>
