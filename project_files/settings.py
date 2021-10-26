@@ -16,6 +16,7 @@ load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+WAGTAIL_SITE_NAME = 'JNutter DEV'
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -42,6 +43,21 @@ INSTALLED_APPS = [
     'django_sass',
     
     'project.apps.ProjectConfig',
+
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
+    'wagtail.embeds',
+    'wagtail.sites',
+    'wagtail.users',
+    'wagtail.snippets',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.search',
+    'wagtail.admin',
+    'wagtail.core',
+
+    'modelcluster',
+    'taggit',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +68,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 ROOT_URLCONF = 'project_files.urls'
@@ -127,10 +145,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'static',
-]
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static',
+# ]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
