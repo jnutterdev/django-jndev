@@ -7,12 +7,16 @@ authors = ["jnutterdev <hello@jnutterdev.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^3.2.3"
-Pillow = "^8.2.0"
-django-sass = "^1.0.1"
+django-sass = "^1.1.0"
 python-dotenv = "^0.17.1"
 psycopg2-binary = "^2.8.6"
 Markdown = "^3.3.4"
+<<<<<<< HEAD
 wagtail = "^2.14.2"
+=======
+django-webp = "^2.0.0"
+Pillow = "^8.4.0"
+>>>>>>> 87f1b43cdebbf9df457359ec5bdd8e5e8236fa8f
 
 [tool.poetry.dev-dependencies]
 
