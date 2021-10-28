@@ -5,8 +5,8 @@
     "styles": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "theme:dev": "postcss static/css/styles.css -w -d static/css/ --verbose",
-        "theme:build": "NODE_ENV=production postcss static/css/styles.css -d static/css/ --verbose"
+        "theme:dev": "postcss static/css/input.css -o static/css/styles.css --verbose",
+        "theme:build": "NODE_ENV=production postcss static/css/input.css -o static/css/styles.css --verbose"
     },
     "repository": {
         "type": "git",
