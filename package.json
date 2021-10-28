@@ -1,27 +1,29 @@
 {
-  "name": "django-jndev",
-  "description": "Redesign of jnuttedev.com website. Project is built with Django, Sass, and some Bulma. Uses Wagtail on the backend to manage content. Blog posts now converts markdown to HTML, saves timestamp for added/updated posts.",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jnutterdev/django-jndev.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jnutterdev/django-jndev/issues"
-  },
-  "homepage": "https://github.com/jnutterdev/django-jndev#readme",
-  "dependencies": {
-    "autoprefixer": "^10.3.7",
-    "cssnano": "^5.0.8",
-    "postcss": "^8.3.11",
-    "postcss-cli": "^9.0.1",
-    "tailwindcss": "^2.2.17"
-  }
+    "name": "django-jndev",
+    "description": "Redesign of jnuttedev.com website. Project is built with Django, Sass, and some Bulma. Uses Wagtail on the backend to manage content. Blog posts now converts markdown to HTML, saves timestamp for added/updated posts.",
+    "version": "1.0.0",
+    "styles": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "theme:dev": "postcss static/css/styles.css -w -d static/css/ --verbose",
+        "theme:build": "NODE_ENV=production postcss static/css/styles.css -d static/css/ --verbose"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jnutterdev/django-jndev.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jnutterdev/django-jndev/issues"
+    },
+    "homepage": "https://github.com/jnutterdev/django-jndev#readme",
+    "dependencies": {
+        "autoprefixer": "^10.3.7",
+        "cssnano": "^5.0.8",
+        "postcss": "^8.3.11",
+        "postcss-cli": "^9.0.1",
+        "tailwindcss": "^2.2.17"
+    }
 }
