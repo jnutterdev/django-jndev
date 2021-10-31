@@ -30,3 +30,7 @@ Run the server and watch for new sass file changes:
 ### To login to wagtail
 
 `127.0.0.1:8000/cms`
+
+# Use Tailwind in development
+
+`./manage.py tailwind start`
