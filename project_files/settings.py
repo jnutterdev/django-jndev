@@ -29,6 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
 
 # Application definition
 
@@ -55,6 +59,9 @@ INSTALLED_APPS = [
     'wagtail.admin',
     'wagtail.core',
 
+    'tailwind',
+    'theme',
+
     'modelcluster',
     'taggit',
 ]
@@ -71,7 +78,7 @@ MIDDLEWARE = [
     'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
-TAILWIND_APP_NAME = 'jndev'
+TAILWIND_APP_NAME = 'theme'
 
 ROOT_URLCONF = 'project_files.urls'
 
